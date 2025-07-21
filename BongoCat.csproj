@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\click.wav" />
+    <None Remove="assets\doublehit.png" />
+    <None Remove="assets\idle.png" />
+    <None Remove="assets\lefthit.png" />
+    <None Remove="assets\righthit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\click.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MouseKeyHook" Version="5.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\doublehit.png" />
+    <Resource Include="assets\idle.png" />
+    <Resource Include="assets\lefthit.png" />
+    <Resource Include="assets\righthit.png" />
+  </ItemGroup>
+
+</Project>
