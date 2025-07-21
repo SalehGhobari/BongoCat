@@ -98,10 +98,12 @@ namespace learnWpf
                 if (this.WindowState == WindowState.Normal)
                 {
                     this.WindowState = WindowState.Minimized;
+                    ClickSound.Volume = 0;
                 }
                 else
                 {
                     this.WindowState = WindowState.Normal;
+                    ClickSound.Volume = 1.0;
                 }
             }
         }
