@@ -14,7 +14,6 @@ namespace learnWpf
         private BitmapImage Idle = new BitmapImage(new Uri("assets/idle.png", UriKind.Relative));
         private BitmapImage RightHit = new BitmapImage(new Uri("assets/righthit.png", UriKind.Relative));
         private BitmapImage LeftHit = new BitmapImage(new Uri("assets/lefthit.png", UriKind.Relative));
-        private BitmapImage DoubleHit = new BitmapImage(new Uri("assets/doublehit.png", UriKind.Relative));
         private Random RandomNumber = new Random();
         private MediaPlayer ClickSound = new MediaPlayer();
         private List<Keys> PressedKeys = new List<Keys>();
